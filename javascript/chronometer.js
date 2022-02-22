@@ -6,7 +6,7 @@ class Chronometer {
 
   start(callback) {
     this.intervalId = setInterval(() => {
-      if(callback) { //we have to check if we actually call this function
+      if(callback) { // with the 'if' we have to check if we actually call this function
         callback()
       } this.currentTime++;
       }, 1000);
